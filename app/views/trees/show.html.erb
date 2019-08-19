@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tree.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tree.description %>
+</p>
+
+<div>
+	<%= image_tag(@tree.image ,style: "width:25%") %>
+	</div>
+
+<%= link_to 'Edit', edit_tree_path(@tree) %> |
+<%= link_to 'Back', trees_path %>
